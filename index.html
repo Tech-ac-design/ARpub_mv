@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html>
- <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>AR Viewer Example</title>
-
+  <head>
+    <title>Model Viewer Example</title>
+    <script src="https://modelviewer.dev/shared/webcomponents-lite.js"></script>
+    <script src="https://modelviewer.dev/libs/modelviewer.js"></script>
+    <style>
+      model-viewer {
+        width: 100%;
+        height: 500px;
+      }
+    </style>
   </head>
   <body>
-
-  
-<!-- Import the component -->
-<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
-<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
-<!-- Use it like any other HTML element -->
-<model-viewer src="https://github.com/Tech-ac-design/ARpub_mv/blob/main/tappo.glb" ar ar-modes="quick-look fallback" ar-scale="auto" magic-leap camera-controls alt="A 3D model of a cap" ios-src="https://github.com/Tech-ac-design/ARpub_mv/blob/main/Wallboxv24.usdz"></model-viewer>
+    <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
+      alt="A 3D model of an astronaut"
+      ar ar-modes="webxr scene-viewer quick-look"
+      environment-image="neutral"
+      camera-controls>
+    </model-viewer>
   </body>
-
-    </html>
+</html>
