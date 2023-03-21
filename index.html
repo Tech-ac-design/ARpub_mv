@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
-    <!-- Import the component -->
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
-    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
-    <!-- Use it like any other HTML element -->
-    <model-viewer ar src="https://github.com/Tech-ac-design/ARpub_mv/blob/f9d1d10a62753b50742f260781da28a6b5c50c51/Wallboxv24.usdz" alt="A 3D model of a wallbox" auto-rotate camera-controls background-color="#455A64"></model-viewer>
+<head>
+  <meta charset="UTF-8">
+  <title>QuickLook Model Viewer</title>
+  <script src="https://modelviewer.dev/shared/modelviewer.js"></script>
+</head>
+<body>
+  <model-viewer src="https://github.com/Tech-ac-design/ARpub_mv/blob/main/Wallboxv24.usdz" ios-src="https://github.com/Tech-ac-design/ARpub_mv/blob/main/Wallboxv24.usdz" ar ar-modes="webxr scene-viewer quick-look"></model-viewer>
+</body>
 </html>
