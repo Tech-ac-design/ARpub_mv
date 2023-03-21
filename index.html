@@ -1,9 +1,19 @@
 <!DOCTYPE html>
 <html>
+ <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>AR Viewer Example</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/2.2.0/aframe/build/aframe-ar.js"></script>
+  </head>
+  <body>
 
+  
 <!-- Import the component -->
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
 <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
 <!-- Use it like any other HTML element -->
 <model-viewer src="https://github.com/Tech-ac-design/ARpub_mv/blob/main/tappo.glb" ar ar-modes="webxr scene-viewer quick-look fallback" ar-scale="auto" magic-leap camera-controls alt="A 3D model of a cap" ios-src="https://github.com/Tech-ac-design/ARpub_mv/blob/main/Tappo.usdz"></model-viewer>
-</html>
+  </body>
+
+    </html>
